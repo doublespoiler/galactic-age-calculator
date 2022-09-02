@@ -3,6 +3,9 @@ export default class Calculator{
     this.birthMonth = parseInt(birthMonth);
     this.birthDay = parseInt(birthDay);
     this.birthYear = parseInt(birthYear);
-    this.currentDate = parseInt(currentDate);
+    this.currentDate = currentDate;
+    // this.currentYear = currentDate.getYear();
+    // this.currentMonth = currentDate.getMonth();
+    // this.currentDay = currentDate.getDate();
   }
 }
