@@ -43,21 +43,21 @@ describe ('Calculator', () => {
 
   test('should return the age of the user on Mercury.', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.mercuryYears()).toEqual(125);
+    expect(earthYearsCalc.mercuryYears).toEqual(125);
   });
 
   test('should return the age of the user on Venus', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.venusYears()).toEqual(48.39);
+    expect(earthYearsCalc.venusYears).toEqual(48.39);
   });
 
   test('should return the age of the user on Mars', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.marsYears()).toEqual(15.96);
+    expect(earthYearsCalc.marsYears).toEqual(15.96);
   });
 
   test('should return the age of the user on Jupiter', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.jupiterYears()).toEqual(2.53);
+    expect(earthYearsCalc.jupiterYears).toEqual(2.53);
   });
 });
