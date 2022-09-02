@@ -20,9 +20,9 @@ export default class Calculator{
     return parseFloat((this.years/0.62).toFixed(2));
   }
 
-  // marsYears(){
-
-  // }
+  marsYears(){
+    return parseFloat((this.years/1.88).toFixed(2));
+  }
 
   // jupiterYears(){
 
