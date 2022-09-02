@@ -31,5 +31,10 @@ describe ('Calculator', () => {
     expect(earthYearsCalc.currentYear).toEqual(2022);
     expect(earthYearsCalc.currentMonth).toEqual(8); //month is always month-1
     expect(earthYearsCalc.currentDay).toEqual(1); //day is day-1
+    console.log(earthYearsCalc);
+  });
+  test('it should return the total days since birth', () =>  {
+    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
+    expect(earthYearsCalc.daysSinceBirth).toEqual(10.929); //10.929*365=29.94, within margin of error for not accounting for leap years
   });
 });

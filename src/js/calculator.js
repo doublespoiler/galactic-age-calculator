@@ -7,5 +7,6 @@ export default class Calculator{
     this.currentYear = currentDate.getFullYear();
     this.currentMonth = currentDate.getMonth();
     this.currentDay = currentDate.getDate();
+    
   }
 }
