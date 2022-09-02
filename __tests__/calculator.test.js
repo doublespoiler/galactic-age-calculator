@@ -4,13 +4,12 @@ import Calculator from './../src/js/calculator.js';
 const RealDate = Date.now();
 let currentDate;
 
-beforeAll(() => {
+beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
-  const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
-  
+  console.log(currentDate);
 });
 
-afterAll(() => {
+afterEach(() => {
 });
 
 describe ('Calculator', () => {
@@ -22,13 +21,13 @@ describe ('Calculator', () => {
   });
 
   test('it should store the current date in ms since Jan 1 1970', () => {
-    const earthYearsCalc = new Calculator("4", "21", "1992");
-    expect(earthYearsCalc.currentDate).toEqual(`2022-09-02T00:00:00.000`);
+    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
+    expect(earthYearsCalc.currentDate).toEqual(currentDate);
   });
 
   test('it should store the current year, month and date for currentDate',() => {
     console.log(typeof(currentDate) + " " + currentDate + " " + Date.parse(currentDate));
-
+    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
     expect(earthYearsCalc.currentYear).toEqual(2022);
     expect(earthYearsCalc.currentMonth).toEqual(9);
     expect(earthYearsCalc.currentDay).toEqual(2);
