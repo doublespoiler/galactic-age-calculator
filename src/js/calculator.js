@@ -1,5 +1,7 @@
 export default class Calculator{
-  constructor(birthYear){
+  constructor(birthMonth, birthDay, birthYear){
+    this.birthMonth = parseInt(birthMonth);
+    this.birthDay = parseInt(birthDay);
     this.birthYear = parseInt(birthYear);
   }
 }
