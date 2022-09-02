@@ -12,9 +12,22 @@ export default class Calculator{
 
   }
 
-  venusYears(){
+  mercuryYears(){
     return this.years/0.24;
   }
+
+  venusYears(){
+
+  }
+
+  // marsYears(){
+
+  // }
+
+  // jupiterYears(){
+
+  // }
+
 
   //planet years is planet age * 
 }

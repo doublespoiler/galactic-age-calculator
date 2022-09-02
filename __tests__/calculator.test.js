@@ -44,4 +44,10 @@ describe ('Calculator', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
     expect(earthYearsCalc.mercuryYears()).toEqual(125);
   });
+
+  test('should return the age of the user on Venus', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
+    expect(earthYearsCalc.venusYears()).toEqual(48.38);
+
+  })
 });
