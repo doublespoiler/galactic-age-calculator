@@ -5,6 +5,7 @@ let currentDate;
 
 beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
+  
 });
 
 describe ('Calculator', () => {
@@ -48,6 +49,10 @@ describe ('Calculator', () => {
   test('should return the age of the user on Venus', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
     expect(earthYearsCalc.venusYears()).toEqual(48.39);
+  });
 
-  })
+  test('should return the age of the user on Mars', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
+    expect(earthYearsCalc.marsYears()).toEqual(15.96);
+  });
 });
