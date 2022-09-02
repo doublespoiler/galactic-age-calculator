@@ -42,6 +42,6 @@ describe ('Calculator', () => {
 
   test('should return the age of the user on Mercury.', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.venusYears()).toEqual(125);
+    expect(earthYearsCalc.mercuryYears()).toEqual(125);
   });
 });
