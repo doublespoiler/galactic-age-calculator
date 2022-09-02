@@ -24,9 +24,9 @@ export default class Calculator{
     return parseFloat((this.years/1.88).toFixed(2));
   }
 
-  // jupiterYears(){
-
-  // }
+  jupiterYears(){
+    return parseFloat((this.years/11.86).toFixed(2));
+  }
 
 
   //planet years is planet age * 
