@@ -17,7 +17,7 @@ export default class Calculator{
   }
 
   venusYears(){
-
+    return parseFloat((this.years/0.62).toFixed(2));
   }
 
   // marsYears(){
