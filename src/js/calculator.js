@@ -12,5 +12,9 @@ export default class Calculator{
 
   }
 
+  venusYears(){
+    
+  }
+
   //planet years is planet age * 
 }

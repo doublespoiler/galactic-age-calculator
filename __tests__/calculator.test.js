@@ -35,5 +35,13 @@ describe ('Calculator', () => {
   test('should set the year age of the user', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
     expect(earthYearsCalc.years).toEqual(30);
-  })
+  }); 
+  //it was at this point I realized 
+  //I probably went too far calculating the user's age in days and years by hand like this.
+  //I think I plan too far ahead, maybe.
+
+  test('should return the age of the user on Mercury.', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
+    expect(earthYearsCalc.venusYears()).toEqual(125);
+  });
 });
