@@ -13,7 +13,7 @@ export default class Calculator{
   }
 
   venusYears(){
-    
+    return this.years/0.24;
   }
 
   //planet years is planet age * 
