@@ -1,12 +1,10 @@
 
 import Calculator from './../src/js/calculator.js';
 
-const RealDate = Date.now();
 let currentDate;
 
 beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
-  console.log(currentDate);
 });
 
 afterEach(() => {
@@ -26,15 +24,21 @@ describe ('Calculator', () => {
   });
 
   test('it should store the current year, month and date for currentDate',() => {
-    console.log(typeof(currentDate) + " " + currentDate + " " + Date.parse(currentDate));
     const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
     expect(earthYearsCalc.currentYear).toEqual(2022);
     expect(earthYearsCalc.currentMonth).toEqual(8); //month is always month-1
     expect(earthYearsCalc.currentDay).toEqual(1); //day is day-1
-    console.log(earthYearsCalc);
   });
+
   test('it should return the total days since birth', () =>  {
-    const earthYearsCalc = new Calculator("9", "2", "1992", currentDate); 
-    expect(earthYearsCalc.daysSinceBirth).toEqual(10919); //10.929*365=29.94, within margin of error for not accounting for leap years
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate); 
+    expect(earthYearsCalc.daysSinceBirth).toEqual(11069); //((2022 - 1992)*365) + ((8-4)*30) + ((1-2))
   });
+
+  test('it should return the year age of the user', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate); // 30 years, 5 months, 0 days
+    expect(earthYearsCalc.years).toEqual(30); 
+  });
+
+
 });
