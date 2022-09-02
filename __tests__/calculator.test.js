@@ -21,6 +21,7 @@ describe ('Calculator', () => {
 
   test('it should store the current date in ms since Jan 1 1970', () => {
     const currentDate = Date.now();
+    console.log(currentDate);
     const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
     expect(earthYearsCalc.currentDate).toEqual(1662114030000);
   });
