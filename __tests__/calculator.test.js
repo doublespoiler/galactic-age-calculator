@@ -34,7 +34,7 @@ describe ('Calculator', () => {
     console.log(earthYearsCalc);
   });
   test('it should return the total days since birth', () =>  {
-    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
-    expect(earthYearsCalc.daysSinceBirth).toEqual(10.929); //10.929*365=29.94, within margin of error for not accounting for leap years
+    const earthYearsCalc = new Calculator("9", "2", "1992", currentDate); 
+    expect(earthYearsCalc.daysSinceBirth).toEqual(10919); //10.929*365=29.94, within margin of error for not accounting for leap years
   });
 });
