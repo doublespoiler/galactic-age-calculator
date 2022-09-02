@@ -29,7 +29,7 @@ describe ('Calculator', () => {
     console.log(typeof(currentDate) + " " + currentDate + " " + Date.parse(currentDate));
     const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
     expect(earthYearsCalc.currentYear).toEqual(2022);
-    expect(earthYearsCalc.currentMonth).toEqual(9);
-    expect(earthYearsCalc.currentDay).toEqual(2);
+    expect(earthYearsCalc.currentMonth).toEqual(8); //month is always month-1
+    expect(earthYearsCalc.currentDay).toEqual(1); //day is day-1
   });
 });
