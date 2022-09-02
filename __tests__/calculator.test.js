@@ -7,9 +7,6 @@ beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
 });
 
-afterEach(() => {
-});
-
 describe ('Calculator', () => {
   test('it should create a calculator object with the input birth date in Earth Years, Months and Days.', () =>{
     const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
@@ -30,15 +27,13 @@ describe ('Calculator', () => {
     expect(earthYearsCalc.currentDay).toEqual(1); //day is day-1
   });
 
-  test('it should return the total days since birth', () =>  {
+  test('it should set the total days since birth', () =>  {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate); 
     expect(earthYearsCalc.daysSinceBirth).toEqual(11069); //((2022 - 1992)*365) + ((8-4)*30) + ((1-2))
   });
 
-  test('it should return the year age of the user', () => {
-    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate); // 30 years, 5 months, 0 days
-    expect(earthYearsCalc.years).toEqual(30); 
-  });
-
-
+  test('should set the year age of the user', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
+    expect(earthYearsCalc.years).toEqual(30);
+  })
 });
