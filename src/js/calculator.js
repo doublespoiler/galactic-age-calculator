@@ -1,5 +1,5 @@
 export default class Calculator{
-  constructor(earthYears){
-    this.earthYears = parseInt(earthYears);
+  constructor(birthYear){
+    this.birthYear = parseInt(birthYear);
   }
 }
