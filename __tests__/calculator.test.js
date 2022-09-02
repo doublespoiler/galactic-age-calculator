@@ -55,4 +55,9 @@ describe ('Calculator', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
     expect(earthYearsCalc.marsYears()).toEqual(15.96);
   });
+
+  test('should return the age of the user on Jupiter', () => {
+    const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
+    expect(earthYearsCalc.jupiterYears()).toEqual(2.53);
+  });
 });
