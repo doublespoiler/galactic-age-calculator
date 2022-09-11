@@ -35,4 +35,9 @@ export default class Calculator{
     return parseFloat((this.years - marsExpect).toFixed(2));
   }
 
+  jupiterDiff(earthExpect){
+    const jupiterExpect = earthExpect * 11.86;
+    return parseFloat((this.years - jupiterExpect).toFixed(2));
+  }
+
 }
