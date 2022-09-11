@@ -1,6 +1,6 @@
 {
-  "name": "env",
-  "version": "1.0.0",
+  "name": "Galactic Space Calculator",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {

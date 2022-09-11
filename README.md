@@ -1,13 +1,11 @@
-# _{Application Name}_
+# Galactic Space Calculator
 
-#### By _**{List of contributors}**_
+#### By Skylan Lew
 
-#### _{Brief description of application}_
+#### Epidocuds Project 5 Test-Driven Development and Environments with JavaScript
 
 ## Technologies Used
 
-* HTML
-* CSS
 * JS
 * Node
 * npm
@@ -18,13 +16,15 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This project was to demonstrate knowledge of Jest testing. As a result, it has no UI. The user can input their birth month, birth day, birth year, and the current date (in a GUI application, this would be fetched by the application). The program stores their birthday and the current date.
+
+The program then has a few functions designed to be run after initial user input. `planetCalc()` calculates the user's age on each planet in years. the `___Diff()` functions calculate the difference between the user's age on earth, and the converted life expectancy on each planet, and returns the difference in age (negative if younger, positive if older). This corresponds with their life expectancy on each planet, and how many years they have lived past their life expectancy, respectively.
 
 ## Setup/Installation Requirements
 
 * Tested on Node 16.16.0
 
-* clone with `git clone https://github.com/doublespoiler/epicodus-env`
+* clone with `git clone https://github.com/doublespoiler/galactic-age-calculator`
 * install packages with `$ npm install`
 * edit your tests in __tests__ folder
 * edit your source code in src folder
@@ -34,10 +34,9 @@ _{This is a detailed description of your application. Give as much detail as nee
 * lint with `$ npm run lint`
 * test with `$ npm run test`
 
-
-
 ## Known Bugs
 
+* none
 
 ## License
 
