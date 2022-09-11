@@ -64,6 +64,10 @@ describe ('Calculator', () => {
 
   test('should return the life expectancy difference on Mercury', () => {
     expect(earthYearsCalc.mercuryDiff(80)).toEqual(10.8);
+  });
+
+  test('should return the life expectancy difference on Venus', () => {
+    expect(earthYearsCalc.venusDiff(80)).toEqual(19.6);
   })
 
 });
