@@ -18,7 +18,7 @@ export default class Calculator{
     this.jupiterYears = parseFloat((this.years/11.86).toFixed(2));
   }
   earthDiff(earthExpect){
-    return this.years - earthExpect;
+    return this.years - earthExpect; 
   }
 
 
