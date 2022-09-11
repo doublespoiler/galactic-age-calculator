@@ -58,5 +58,7 @@ describe ('Calculator', () => {
     expect(earthYearsCalc.jupiterYears).toEqual(2.53);
   });
 
-
+  test('should return the life expectancy difference on Earth', () => {
+    expect(earthYearsCalc.earthDiff(80)).toEqual();
+  });
 });
