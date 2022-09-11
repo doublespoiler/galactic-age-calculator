@@ -20,6 +20,9 @@ export default class Calculator{
   earthDiff(earthExpect){
     return this.years - earthExpect; 
   }
-
+  mercuryDiff(earthExpect){
+    const mercuryExpect = earthExpect * 0.24;
+    return this.years - mercuryExpect;
+  }
 
 }
