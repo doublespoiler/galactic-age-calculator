@@ -70,4 +70,8 @@ describe ('Calculator', () => {
     expect(earthYearsCalc.venusDiff(80)).toEqual(-19.6);
   });
 
+  test('should return the life expectancy difference on Mars', () => {
+    expect(earthYearsCalc.marsDiff(80)).toEqual(-120.4);
+  });
+
 });
