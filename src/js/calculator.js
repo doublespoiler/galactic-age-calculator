@@ -25,4 +25,9 @@ export default class Calculator{
     return this.years - mercuryExpect;
   }
 
+  venusDiff(earthExpect){
+    const venusExpect = earthExpect * 0.62;
+    return this.years - venusExpect;
+  }
+
 }
