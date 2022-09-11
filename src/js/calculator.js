@@ -18,16 +18,21 @@ export default class Calculator{
     this.jupiterYears = parseFloat((this.years/11.86).toFixed(2));
   }
   earthDiff(earthExpect){
-    return this.years - earthExpect; 
+    return parseFloat((this.years - earthExpect).toFixed(2)); 
   }
   mercuryDiff(earthExpect){
     const mercuryExpect = earthExpect * 0.24;
-    return this.years - mercuryExpect;
+    return parseFloat((this.years - mercuryExpect).toFixed(2));
   }
 
   venusDiff(earthExpect){
     const venusExpect = earthExpect * 0.62;
-    return this.years - venusExpect;
+    return parseFloat((this.years - venusExpect).toFixed(2));
+  }
+
+  marsDiff(earthExpect){
+    const marsExpect = earthExpect * 1.88;
+    return parseFloat((this.years - marsExpect).toFixed(2));
   }
 
 }
