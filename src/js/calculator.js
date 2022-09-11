@@ -9,9 +9,24 @@ export default class Calculator{
     this.currentDay = currentDate.getDate();
     this.daysSinceBirth = ((this.currentYear - this.birthYear)*365) + (((this.currentMonth - this.birthMonth)*30)) + (this.currentDay - this.birthDay); //age in days
     this.years = parseInt((this.daysSinceBirth/365.00));
-    this.mercuryYears = parseFloat((this.years/0.24).toFixed(2));
-    this.venusYears = parseFloat((this.years/0.62).toFixed(2));
-    this.marsYears = parseFloat((this.years/1.88).toFixed(2));
-    this.jupiterYears = parseFloat((this.years/11.86).toFixed(2));
   }
+
+  
+
+  jupiterYears(){
+    return parseFloat((this.years/11.86).toFixed(2));
+  }
+
+  marsYears(){
+    return parseFloat((this.years/1.88).toFixed(2));
+  }
+
+  venusYears(){
+    return parseFloat((this.years/0.62).toFixed(2));
+  }
+
+  mercuryYears(){
+    return parseFloat((this.years/0.24).toFixed(2));
+  }
+  //todo: life expectancy
 }

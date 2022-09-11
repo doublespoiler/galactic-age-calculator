@@ -2,22 +2,24 @@
 import Calculator from './../src/js/calculator.js';
 
 let currentDate;
+let earthYearsCalc;
 
 beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
+  earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
   
 });
 
 describe ('Calculator', () => {
   test('it should create a calculator object with the input birth date in Earth Years, Months and Days.', () =>{
-    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
+
     expect(earthYearsCalc.birthMonth).toEqual(4);
     expect(earthYearsCalc.birthDay).toEqual(21);
     expect(earthYearsCalc.birthYear).toEqual(1992);
   });
 
   test('it should store the current date in ms since Jan 1 1970', () => {
-    const earthYearsCalc = new Calculator("4", "21", "1992", currentDate);
+
     expect(earthYearsCalc.currentDate).toEqual(currentDate);
   });
 
@@ -43,21 +45,22 @@ describe ('Calculator', () => {
 
   test('should return the age of the user on Mercury.', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.mercuryYears).toEqual(125);
+    expect(earthYearsCalc.mercuryYears()).toEqual(125);
   });
 
   test('should return the age of the user on Venus', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.venusYears).toEqual(48.39);
+    expect(earthYearsCalc.venusYears()).toEqual(48.39);
   });
 
   test('should return the age of the user on Mars', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.marsYears).toEqual(15.96);
+    expect(earthYearsCalc.marsYears()).toEqual(15.96);
   });
 
   test('should return the age of the user on Jupiter', () => {
     const earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
-    expect(earthYearsCalc.jupiterYears).toEqual(2.53);
+    expect(earthYearsCalc.jupiterYears()).toEqual(2.53);
   });
+
 });
