@@ -8,7 +8,6 @@ beforeEach(() => {
   currentDate = new Date("2022-09-02T00:00:00.000Z");
   earthYearsCalc = new Calculator("4", "2", "1992", currentDate);
   earthYearsCalc.planetCalc();
-  
 });
 
 describe ('Calculator', () => {
