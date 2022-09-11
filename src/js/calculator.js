@@ -17,9 +17,11 @@ export default class Calculator{
     this.marsYears = parseFloat((this.years/1.88).toFixed(2));
     this.jupiterYears = parseFloat((this.years/11.86).toFixed(2));
   }
+
   earthDiff(earthExpect){
     return parseFloat((this.years - earthExpect).toFixed(2)); 
   }
+
   mercuryDiff(earthExpect){
     const mercuryExpect = earthExpect * 0.24;
     return parseFloat((this.years - mercuryExpect).toFixed(2));
