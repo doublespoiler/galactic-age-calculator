@@ -74,4 +74,8 @@ describe ('Calculator', () => {
     expect(earthYearsCalc.marsDiff(80)).toEqual(-120.4);
   });
 
+  test('should return the life expectancy difference on Jupiter', () => {
+    expect(earthYearsCalc.jupiterDiff(80)).toEqual(-918.8)
+  });
+
 });
